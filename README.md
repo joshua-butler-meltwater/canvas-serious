@@ -1,30 +1,49 @@
-# Canvas Git Trial
+# AI Chat Input
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A React application built with Vite, featuring a chat interface and various components for AI-powered interactions.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/joshuabutler-meltwatercos-projects/v0-canvas-git-trial)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/yztchXuUNLO)
+## Local Development
 
-## Overview
+To run the project locally:
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
 
 ## Deployment
 
-Your project is live at:
+This project is configured for deployment on Vercel. You can deploy it in two ways:
 
-**[https://vercel.com/joshuabutler-meltwatercos-projects/v0-canvas-git-trial](https://vercel.com/joshuabutler-meltwatercos-projects/v0-canvas-git-trial)**
+### Using Vercel CLI
 
-## Build your app
+```bash
+# Install Vercel CLI (if not already installed)
+npm install -g vercel
 
-Continue building your app on:
+# Deploy to Vercel
+vercel
+```
 
-**[https://v0.dev/chat/projects/yztchXuUNLO](https://v0.dev/chat/projects/yztchXuUNLO)**
+### Using Vercel Dashboard
 
-## How It Works
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Connect your repository to Vercel
+3. Vercel will automatically detect the configuration and deploy your project
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## TypeScript Notes
+
+The project contains some TypeScript errors that currently don't prevent the app from running. If you want to run TypeScript checks:
+
+```bash
+npx tsc --noEmit
+```
+
+To build with type checking:
+
+```bash
+npm run build:type-check
+```
